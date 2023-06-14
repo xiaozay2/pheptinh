@@ -1,0 +1,24 @@
+<?php
+
+function performCalculation($operator, $operand1, $operand2) {
+    switch ($operator) {
+        case '+':
+            return $operand1 + $operand2;
+        case '-':
+            return $operand1 - $operand2;
+        case 'x':
+            return $operand1 * $operand2;
+        default:
+            return "Invalid operator";
+    }
+}
+
+// Example usage
+$operator = '+'; // Change the operator as needed: +, -, x
+$operand1 = 5;   // Change the operands as needed
+$operand2 = 3;   // Change the operands as needed
+
+$result = performCalculation($operator, $operand1, $operand2);
+echo "Result: " . $result;
+
+?>
